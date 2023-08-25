@@ -1,0 +1,271 @@
+
+
+<section class="services" id="services">
+        <div class="section__bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <div class="section-title-3 section-title-4 text-center">
+                        
+                        <h3 class="title">Our Services</h3>
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="col">
+                        <a href="#"><div class="service-item">
+                            <div class="icon">
+                                <img src="Images/pen.svg" alt="">
+                            </div>
+                            <h4 class="title">Creatives And Print Solution</h4>
+                            <p>From computer-generated graphics and digital animation which is designed to envision a future product, to printing of your branding materials with precision and attention to detail.
+
+                            </p>
+                            <div class="service-dot">
+                                <img src="Images/service-dot-2.png" alt="">
+                                <div class="item">
+                                    <img src="Images/penw.svg" alt="">
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><div class="service-item">
+                            <div class="icon">
+                                <img src="Images/tech.svg" alt="">
+                            </div>
+                            <h4 class="title">Innovative Technology Solution</h4>
+                            <p>In this 21st Century, the need and importance of technology in daily business activities can never be overemphasized.  Technology has a key role to play in business today. 
+                            </p>
+                            <div class="service-dot">
+                                <img src="Images/service-dot-2.png" alt="">
+                                <div class="item">
+                                    <img src="Images/techw.svg" alt="">
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><div class="service-item">
+                            <div class="icon">
+                                <img src="Images/digital.svg" alt="">
+                            </div>
+                            <h4 class="title">Digital Marketing <br>Solution</h4>
+                            <p>Develop sales driven digital strategies with top notch content ideas for soial media, copies for websites and effective online advertising management not forgetting SEO!</p>
+                            <div class="service-dot">
+                                <img src="Images/service-dot-2.png" alt="">
+                                <div class="item">
+                                    <img src="Images/digitalw.svg" alt="">
+                                </div>
+                            </div>                            
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><div class="service-item">
+                            <div class="icon">
+                                <img src="Images/video.svg" alt="">
+                            </div>
+                            <h4 class="title">Media Audiovisuals</h4>
+                            <p>W&amp;G Audiovisual is focused on creating engaging visual content for both corporate and non-corporate clients. From TV commercials to radio jingles and live event streaming.
+                            <br><br></p>
+                            <div class="service-dot">
+                                <img src="Images/service-dot-2.png" alt="">
+                                <div class="item">
+                                    <img src="Images/videow.svg" alt="">
+                                </div>
+                            </div>
+                            
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><div class="service-item">
+                            <div class="icon">
+                                <img src="Images/school.svg" alt="">
+                            </div>
+                            <h4 class="title">School Support System</h4>
+                            <p> We provide services that enable schools give your children the best experience within the four walls of the school. 
+                              
+                            </p>
+                            <div class="service-dot">
+                                <img src="Images/service-dot-2.png" alt="">
+                                <div class="item">
+                                    <img src="Images/schoolw.svg" alt="">
+                                </div>
+                            </div>
+                               
+                        </div></a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    This is the css
+
+
+
+
+
+
+
+
+    .services {
+    /* margin-top: 100px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+
+.services .section__bg {
+    background-image: url(Images/services.jpg);
+    height: 1300px;
+    width: 100%;
+}
+
+.section__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.services .container {
+    display: block;
+    width: 100%;
+    padding: 0rem 3.9rem;    
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+   
+}
+.col1 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* justify-content: space-between; */
+
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 32%;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content: space-evenly;
+
+}
+
+.section-title-3.section-title-4 .title {
+    color: #fff;
+    text-align: center;
+    font-size: 54px;
+    line-height: 62px;
+    text-transform: capitalize;
+}
+
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+
+.row1 a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.service-item {
+    height: 500px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 40px 30px;
+    font-family: "space_grotesk";
+    color: #000;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    margin-top: 30px;
+    text-align: center;
+    transition: all 0.4s ease-out 0s;
+}
+
+.service-item:hover {
+    color: #fff;
+    background: #354A9B;
+    transition: all 0.4s ease-out 0s;
+}
+
+
+.service-item .icon {
+    display: flex;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    line-height: 130px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item .title {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 35px;
+    transition: all 0.4s ease-out 0s;
+    color: #000;
+    margin: 0px 0 15px;
+}
+
+
+.service-item p {
+    margin: 0 0 15px;
+}
+
+.service-item .service-dot {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    transition: all 0.3s ease-out 0s;
+}
+
+.service-dot .item {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 10;
+    height: 100px;
+    width: 100px;
+}
+
+.service-dot .item img {
+    opacity: 1;
+    width: 100%;
+}
