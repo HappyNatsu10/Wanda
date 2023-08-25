@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-light-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-medium-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-semibold-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-bold-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+
+
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Swis721 BT';
+}
+
+
+
+header {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.2rem 5.9rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "space_grotesk";
+    z-index: 3;
+}
+
+.logo img {
+   width: 45%;
+   height: auto;
+   background-color: #fff;
+   border-radius: 50%;
+   padding: 10px;
+   margin-right: -450px;
+}
+
+.nav a {
+    font-size: 18px;
+    font-family: 'space_grotesk';
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.nav a:hover {
+    color: #10369e;  
+}
+
+.a1 {  
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+
+
+}
+
+.a1:hover,
+.a1.active {
+    color: #10369e;  
+}
+
+.header .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition:  height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+
+}
+
+.dropdown_menu.open {
+    height: 260px;
+
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dropdown_menu a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.dropdown_menu a:hover,
+.dropdown_menu a.active {
+    color: #10369e;  
+}
+
+.page-area .bg{
+    background-image: url(Images/about.jpg);
+}
+.bg {
+    position: absolute;
+    left: 0;
+    top: -164px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+    z-index: 2;
+}
+
+
+
+
+.page-title .title {
+    position: relative;
+    margin-top:205px;
+    color: #fff;
+    font-size: 62px;
+    line-height: 70px;
+    justify-content: center;
+    align-content: center;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 3;
+}
+
+.area2 {
+    position: relative;
+    display: block;
+    background-color: #F5F5F5;
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+
+.area2 .container {
+    width: 100%;
+    padding: 0rem 5.9rem;
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.container .port1 {
+    justify-content: center;
+}
+
+.portsect1 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.project-header .title {
+    font-size: 54px;
+    padding-top: 17px;
+    color: #000;
+    margin: 0px 0 15px;
+    line-height: normal;
+    font-weight: 700;
+    text-align: center
+}
+
+.project-menu {
+    text-align: center;
+    padding: 26px 0 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #33415C;
+}
+
+.project-header ul {
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.project-menu ul li {
+    display: inline-block;
+    line-height: 55px;
+    background: #fff;
+    color: #000;
+    box-shadow: 5px;
+    padding: 0 28px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 5px;
+    height: 56px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.project-menu ul li.active {
+    background: #354A9B;
+    color: #fff;
+}
+
+.container .port2 {
+    justify-content: center;
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-between;
+    
+}
+
+.project {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 400px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.project .pro {
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease-out 0s;
+    margin-top: 30px;
+}
+
+.port-thumb {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-thumb img {
+    width: 400px;
+    transition: all 0.5s ease-out 0s;
+}
+
+.pro .portfolio-content {
+    padding: 21px 10px 23px 25px;
+}
+
+.portfolio-content .title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 0px;
+    color: #000;
+    margin: 0px 0 15px
+}
+
+.portfolio-content span {
+    font-size: 14px;
+    color: #354A9B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-area {
+    background: #000;
+    padding-top: 6px;
+}
+
+
+.footer-area .container {
+    width: 100%;
+    padding: 0.5rem 5.9rem; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-item {
+    padding-top: 30px;
+}
+
+.footer-item .rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.rows .fimg {
+    position: relative;
+    width: 35%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+
+.fimg-logo img {
+    max-height: 200px;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+
+.footer-social ul {
+    max-width: 245px;
+    padding: 0;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.footer-item .footer-social ul li {
+    display: inline-block;
+}
+
+.footer-item .footer-social ul li a {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #383838;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 5px;
+    color: #E0E0E0;
+}
+
+.rows .f-links {
+    position: relative;
+    max-width: 35%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.f-lists {
+    margin-top: 30px;
+    margin-left: 50px;
+    
+    
+}
+
+.footer-item .f-lists .title {
+    color: #fff;
+    font-size: 22px;
+    font-family: "space_grotesk";
+    margin-bottom: 37px;
+    
+}
+.footer-item .f-lists ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+ul li a {
+    color: #fff;
+    line-height: 36px;
+    font-family: 'Swis721 BT';
+    transition: all 0.3s ease-out 0s;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #10369e;
+}
+
+.rows .f-contact {
+    position: relative;
+    max-width: 35%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 95px;
+}
+
+.f-contact .f-info {
+    margin-top: 30px;
+}
+
+.footer-item .f-info .title {
+    color: #fff;
+    font-size: 22px;
+    font-family: "space_grotesk";
+    margin-bottom: 37px;
+    
+}
+
+.footer-item .f-info ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-item .f-info ul li {
+    padding-left: 31px;
+    color: #E0E0E0;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.rows .f-copy {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.footer-copyright {
+    color: #fff;
+    font-family: 'Swis721 BT';
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("../fonts/fa-brands-400.woff2");
+    src: url("../fonts/fa-brands-400.woff2") format("woff2")}
+  
+  .fab {
+    font-family: 'Font Awesome 5 Brands'; }
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-display: auto;
+    src: url("../fonts/fa-light-300.woff2");
+    src: url("../fonts/fa-light-300.woff2") format("woff2")}
+  
+  .fal {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300; }
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../fonts/fa-regular-400.eot");
+    src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  
+  .far {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400; }
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("../fonts/fa-solid-900.eot");
+    src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  
+  .fa,
+  .fas {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900; }
+  

@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-light-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-medium-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-semibold-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'space_grotesk';
+  src: url("../fonts/spacegrotesk-bold-webfont.woff2") format("woff2"), url("../fonts/spacegrotesk-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+
+header {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.2rem 5.9rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "space_grotesk";
+    z-index: 3;
+}
+
+.logo img {
+   width: 45%;
+   height: auto;
+   background-color: #fff;
+   border-radius: 50%;
+   padding: 10px;
+   margin-right: -450px;
+}
+
+.nav a {
+    font-size: 17px;
+    font-family: 'space_grotesk';
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.nav a:hover {
+    color: #13dd3f;  
+}
+
+.a1 {  
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+
+
+}
+
+.a1:hover,
+.a1.active {
+    color: #10369e;  
+}
+
+.header .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition:  height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+
+}
+
+.dropdown_menu.open {
+    height: 260px;
+
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dropdown_menu a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.dropdown_menu a:hover,
+.dropdown_menu a.active {
+    color: #10369e;  
+}
+
+.page-area .bg{
+    background-image: url(Images/about.jpg);
+}
+.bg {
+    position: absolute;
+    left: 0;
+    top: -164px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+    z-index: 2;
+}
+
+
+
+
+.page-title .title {
+    position: relative;
+    margin-top:205px;
+    color: #fff;
+    font-size: 62px;
+    line-height: 70px;
+    justify-content: center;
+    align-content: center;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 3;
+}
+
+.area2 {
+    position: relative;
+    display: block;
+    background-color: #fafafa;
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+
+.area2 .container {
+    width: 100%;
+    padding: 0rem 5.9rem;
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.area2 .citem1 {
+    box-shadow: 0px 0px 10px #eee;
+    padding: 0px;
+    border-radius: 10px;
+    max-width: max-content;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* padding: 2.2rem 5.9rem; */
+}
+
+.citem1 img {
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    border-radius: 10px 0px;
+}
+
+.word {
+    min-height: 100px;
+    padding: 10px;
+}
+
+.word h6 {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0px 0 15px;
+    line-height: normal;
+    font-weight: 700;
+    text-align: left;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link p {
+    margin: 0 0 15px
+
+}
+
+.link p a{
+    text-decoration: none;
+}
+
+.footer-area {
+    background: #000;
+    padding-top: 6px;
+}
+
+
+.footer-area .container {
+    width: 100%;
+    padding: 0.5rem 5.9rem; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-item {
+    padding-top: 30px;
+}
+
+.footer-item .rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.rows .fimg {
+    position: relative;
+    width: 35%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+
+.fimg-logo img {
+    max-height: 200px;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+
+.footer-social ul {
+    max-width: 245px;
+    padding: 0;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.footer-item .footer-social ul li {
+    display: inline-block;
+}
+
+.footer-item .footer-social ul li a {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #383838;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 5px;
+    color: #E0E0E0;
+}
+
+.rows .f-links {
+    position: relative;
+    max-width: 35%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.f-lists {
+    margin-top: 30px;
+    margin-left: 50px;
+    
+    
+}
+
+.footer-item .f-lists .title {
+    color: #fff;
+    font-size: 22px;
+    font-family: "space_grotesk";
+    margin-bottom: 37px;
+    
+}
+.footer-item .f-lists ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+ul li a {
+    color: #fff;
+    line-height: 36px;
+    font-family: "space_grotesk";
+    transition: all 0.3s ease-out 0s;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #10369e;
+}
+
+.rows .f-contact {
+    position: relative;
+    max-width: 35%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 95px;
+}
+
+.f-contact .f-info {
+    margin-top: 30px;
+}
+
+.footer-item .f-info .title {
+    color: #fff;
+    font-size: 22px;
+    font-family: "space_grotesk";
+    margin-bottom: 37px;
+    
+}
+
+.footer-item .f-info ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-item .f-info ul li {
+    padding-left: 31px;
+    color: #E0E0E0;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.rows .f-copy {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.footer-copyright {
+    color: #fff;
+    font-family: "space_grotesk";
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+/* Font Icons */
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("../fonts/fa-brands-400.eot");
+    src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  
+  .fab {
+    font-family: 'Font Awesome 5 Brands'; }
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-display: auto;
+    src: url("../fonts/fa-light-300.eot");
+    src: url("../fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-light-300.woff2") format("woff2"), url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.ttf") format("truetype"), url("../fonts/fa-light-300.svg#fontawesome") format("svg"); }
+  
+  .fal {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300; }
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../fonts/fa-regular-400.eot");
+    src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  
+  .far {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400; }
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("../fonts/fa-solid-900.eot");
+    src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  
+  .fa,
+  .fas {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900; }
+  
